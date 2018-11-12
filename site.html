@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="DescriptionGoesHere" />
+
+    <!-- Responsive viewport tag, tells small screens that it's responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SiteTitleHere</title>
+
+  <!-- fonts  -->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+
+    <!-- reset -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+
+    <!-- styles -->
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="grid_v2.css" rel="stylesheet" type="text/css" />
+
+
+  </head>
+
+  <body>
+    
+
+    <main>
+
+        <div class='row'>
+            <nav class='col-12 topNav'>
+                    <h1 class='navTitle'>Dread Pirate Eats</h1>
+                <ul>
+                    <li><a href='#aboutModal'>About</a></li>
+                    <li><a href='#editFavsModal'>Edit Favorites</a></li>
+                    <li><a href='#addFavsModal'>Add Favorites</a></li>
+                    <li>Restart</li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class='row drawSection'>
+            <div class='col-12 mainDraw'>
+                <div class='pirateImageSection'>
+                        <img src='dreadPirate.jpg' class='dreadPirateImage' />
+                    </div>
+                
+                <div class='drawFormSection'>
+                    <form class='drawForm'>
+                        <input type='text' class='drawLocation'/>
+                    <br>
+                        <button class='drawButton'>Draw!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class='row'>
+                <div class='col-12 resultsRow'>
+                    <div class='resultsBox'>
+                            <b>Result 1</b>
+                            <br>
+                            <b>Result 2</b>
+                            <br>
+                            <b>Result 3</b>
+                            <br>
+                    </div>
+
+                    <div class='lastStandBox'>
+                            <b>Last Result</b>
+                    </div>
+
+                </div>
+            </div>
+
+
+    </main> 
+
+
+  </body>
+
+  <script src="index.js" type="text/javascript"></script>
+
+  <!-- This is the HTML for the modal-->
+  <div id='aboutModal' class='modal modalContent'>
+      <div>
+          <a href='#close' title='Close' class='close'>X</a>
+          <h2 class='modalTitle'>About Dread Pirate Eats!</h2>
+          <p>This is how to play the Dread Pirate Eats game.</p>
+          <br>
+          <p>This is the Dread Pirate Eats history.</p>
+      </div>
+  </div>
+  
+  <div id='editFavsModal' class='modal modalContent'>
+      <div>
+          <a href='#close' title='Close' class='close'>X</a>
+          <h2 class='modalTitle'>Your current Dread Pirate Eats favorites!</h2>
+          <form class='modalForm'>
+            <br>
+            <p><input type='checkbox'> Favorite place #1</input></p>
+            <br>
+            <p><input type='checkbox'> Favorite place #2</input></p>
+            <br>
+            <p><input type='checkbox'> Favorite place #3</input></p>
+            <br>
+            <p><input type='checkbox'> Favorite place #4</input></p>
+            <br>
+            <p><input type='checkbox'> Favorite place #5</input></p>
+
+            <br>
+            <p><a href=''>[Delete Button]</a></p>
+
+        </form>
+      </div>
+  </div>
+   
+  <div id='addFavsModal' class='modal modalContent'>
+        <div>
+            <a href='#close' title='Close' class='close'>X</a>
+            <h2 class='modalTitle'>Add NEW Dread Pirate Eats favorites!</h2>
+            <form class='modalForm'>
+                <br>
+              <p>Enter the resturant name:</p>
+              <input type='text'/>
+              <br>
+              <p>Enter resturant city and state:</p>
+              <input type='text'/>
+              <br>
+              <p><a href=''>[Search Button]</a></p>
+                <br>
+              <h2>Search Favorites</h2>
+              <br>
+              <p><input type='checkbox'> Result #1</input></p>
+              <br>
+              <p><input type='checkbox'> Result #2</input></p>
+              <br>
+
+              <p><a href=''>[Add Button]</a></p>
+  
+          </form>
+        </div>
+    </div>
+    
+    
+</html>

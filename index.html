@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="DescriptionGoesHere" />
+
+    <!-- Responsive viewport tag, tells small screens that it's responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SiteTitleHere</title>
+
+  <!-- fonts  -->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+
+    <!-- reset -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+
+    <!-- styles -->
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="grid_v2.css" rel="stylesheet" type="text/css" />
+
+
+  </head>
+
+  <body>
+     
+
+    <main>
+
+        <div class='row'>
+            <nav class='col-12 topNav'>
+                <h1 class='navTitle'>Dread Pirate Eats</h1>
+                <ul>
+                    <li><a href='#aboutModal'>About</a></li>
+                    <li><a href='#signUpModal'>Sign-Up</a></li>
+                    <li>Restart</li>
+                    <li><a href='#loginModal'>Login</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class='row drawSection'>
+            <div class='col-12 mainDraw'>
+                <div class='pirateImageSection'>
+                    <img src='dreadPirate.jpg' class='dreadPirateImage' />
+                </div>
+                
+                <div class='drawFormSection'>
+                    <form class='drawForm'>
+                        <input type='text' class='drawLocation'/>
+                    <br>
+                        <button class='drawButton'>Draw!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class='row'>
+                <div class='col-12 resultsRow'>
+                    <div class='resultsBox'>
+                            <b>Result 1</b>
+                            <br>
+                            <b>Result 2</b>
+                            <br>
+                            <b>Result 3</b>
+                            <br>
+                    </div>
+
+                    <div class='lastStandBox'>
+                            <b>Last Result</b>
+                    </div>
+
+                </div>
+            </div>
+
+    </main> 
+
+
+  </body>
+
+  <script src="index.js" type="text/javascript"></script>
+
+  <!-- This is the HTML for the modal-->
+  <div id='aboutModal' class='modal modalContent'>
+      <div>
+          <a href='#close' title='Close' class='close'>X</a>
+          <h2 class='modalTitle'>About Dread Pirate Eats!</h2>
+          <p>This is how to play the Dread Pirate Eats game.</p>
+          <br>
+          <p>This is the Dread Pirate Eats history.</p>
+      </div>
+  </div>
+  
+  <div id='signUpModal' class='modal modalContent'>
+      <div>
+          <a href='#close' title='Close' class='close'>X</a>
+          <h2 class='modalTitle'>Sign-up for Dread Pirate Eats!</h2>
+        <form class='signUpForm modalForm'>
+            <p>Enter your username:</p>
+            <input type='text'/>
+            <br>
+            <p>Enter your e-mail address:</p>
+            <input type='text'/>
+            <br>
+            <p>Enter your password:</p>
+            <input type='text'/>
+            <br>
+            <p>Confirm your password:</p>
+            <input type='text'/>
+            <br><br>
+            <p><a href='site.html'>[Submit Button]</a></p>
+        </form>
+      </div>
+  </div>
+  
+  <div id='loginModal' class='modal modalContent'>
+          <div>
+          <a href='#close' title='Close' class='close'>X</a>
+          <h2 class='modalTitle'>Login to Dread Pirate Eats!</h2>
+        <form class='logInForm modalForm'>
+          <p>Enter your username:</p>
+          <input type='text'/>
+          <br>
+          <p>Enter your password:</p>
+          <input type='text'/>
+          <br>
+          <p><a href='site.html'>[Login Button]</a></p>
+        </form>
+      </div>
+  </div>
+
+</html>
+
+

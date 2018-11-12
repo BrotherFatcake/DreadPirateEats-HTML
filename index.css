@@ -1,0 +1,167 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1f253d;
+  color: whitesmoke;
+
+}
+
+nav {
+  background-color: grey;
+
+}
+
+nav li {
+  display: block;
+  float: right;
+  margin-top: 6%;
+  padding-left: 10px;
+}
+
+nav .navTitle {
+  display: block;
+  float: left;
+  font-size: 40px;
+  margin-left: 5%;
+}
+
+.drawSection {
+  margin-top: 30px !important;
+  background-color: #1f253d;
+  height: 400px;
+  width: 350px;
+  padding-top: 0px;
+}
+
+.mainDraw {
+  height: 400px;
+  background-color: #1f253d;
+
+}
+
+.pirateImageSection {
+  margin-top: 5%;
+  height:300px;
+  text-align: center;
+}
+
+.dreadPirateImage {
+  border: solid 2px whitesmoke;
+
+  height: 100%;
+  
+}
+
+.drawFormSection {
+  margin-top: 5%;
+  height: 60px;
+  padding-top: 11%;
+  text-align: center;
+  border: solid 2px whitesmoke;
+}
+
+.drawForm {
+  margin-top: -10%;
+}
+
+input {
+  margin-bottom: 3px;
+}
+
+.resultsRow {
+  margin-top: 30px;
+  height: 170px;
+
+}
+
+
+.lastStandBox, .resultsBox {
+  margin-top: 1.5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  font-size: 24px;  
+  text-align: center;
+  padding-top: .25%;
+}
+
+.resultsBox {
+  border: solid 2px whitesmoke;
+  height: 90px;
+}
+
+.lastStandBox {
+  border: solid 2px whitesmoke;
+  height: 40px;
+}
+
+
+.modalForm {
+  text-align: center;
+}
+
+/* review media sizing from challenge accepted */
+
+
+
+.modal { /*https://www.webdesignerdepot.com/2012/10/creating-a-modal-window-with-html5-and-css3/*/
+  position: fixed;
+  top:  0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity: 0;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+  overflow: scroll;
+
+}
+
+.modalContent:target{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modalContent > div {
+  width: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: lightslategray;
+  text-align: left;
+}
+
+
+.close {
+  background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 12px;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover  { 
+  background: lightslategray;
+}
+
+.modal h2{
+  text-align: center;
+  font-size: 24px;
+}
+
+
